@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>threethreethree games</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #8cb3e5;
-        }
-        img {
-            width: 300px;
-            margin
-            display: block;
-            margin: auto;
-            margin-top: 100px;
-        }
-    </style>
-</head>
-<body>
-    <img src="assets/logo.png" alt="Logo">
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>threethreethree games</title>
+        <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: #8db9ec;
+        box-sizing: border-box;
+    }
+
+    .container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 300px;
+        display: flex;
+        height: auto;
+    }
+
+    .store-link {
+        height: auto;
+        width: 150px;
+    }
+
+    video {
+        width: 300px;
+        padding-bottom: 20px;
+    }
+
+    .video-container {
+        /* Optional: Adjust the width of the video container */
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="assets/banner.png" alt="Banner" class="logo">
+            <div class="row">
+                <div class="column">
+                    <a href="https://apps.apple.com/us/app/eelbay/id6461977106" target="_blank">
+                    <img src="assets/download_on_app_store.png" alt="Image 1" class="store-link">
+                    </a>
+                </div>
+                <div class="column store-link">
+                     <a href="https://play.google.com/store/apps/details?id=org.godotengine.eelbay" target="_blank">
+                    <img src="assets/download_on_google_play.png" alt="Image 2" class="store-link">
+                     </a>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <video controls loop muted>
+                    <source src="assets/intro.mp4">
+                    This browser does not display the video tag.
+                </video>
+            </div>
+
+
+        </div>
+
+    </body>
 </html>
