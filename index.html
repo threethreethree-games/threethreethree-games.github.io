@@ -1,78 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>threethreethree games</title>
-        <style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        background-color: #8db9ec;
-        box-sizing: border-box;
-    }
+<html>
 
-    .container {
-        text-align: center;
-        flex-direction: column;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    .logo {
-        width: 300px;
-        display: flex;
-        height: auto;
-    }
+    <!-- HTML Meta Tags -->
+    <title>threethreethree</title>
+    <meta name="description" content="threethreethree games studio">
 
-    .store-link {
-        height: auto;
-        width: 150px;
-    }
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.threethreethree.games/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="threethreethree">
+    <meta property="og:description" content="games studio of three">
 
-    video {
-        width: 300px;
-        padding-bottom: 20px;
-    }
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:domain" content="https://www.threethreethree.games/">
+    <meta property="twitter:url" content="https://www.threethreethree.games/">
+    <meta name="twitter:title" content="threethreethree">
+    <meta name="twitter:description" content="game studio of three">
 
-    .video-container {
-        /* Optional: Adjust the width of the video container */
-        max-width: 100%;
-        width: 300px;
-    }
+    <!-- Site resources -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.gif">
 
-    .row {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding-bottom: 20px;
-    }
+    <!-- Noto Sans Malayalam - Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@600&display=swap" rel="stylesheet">
 
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <img src="assets/banner.png" alt="Banner" class="logo">
-            <div class="row">
-                <div class="column">
-                    <a href="https://apps.apple.com/us/app/eelbay/id6461977106" target="_blank">
-                    <img src="assets/download_on_app_store.png" alt="Image 1" class="store-link">
-                    </a>
-                </div>
-                <div class="column store-link">
-                     <a href="https://play.google.com/store/apps/details?id=org.godotengine.eelbay" target="_blank">
-                    <img src="assets/download_on_google_play.png" alt="Image 2" class="store-link">
-                     </a>
-                </div>
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/8869e15103.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="assets/threethreethree.png"></img>
+    </div>
+    <!--
+    <div class="link-box-row">
+        <a href="https://sourencho.itch.io/" target="_blank" rel="noopener noreferrer">
+            <div class="link-box" id="itch">
+                <h2>
+                    <i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
+                    Itch.io
+                </h2>
+                <p>Games!</p>
             </div>
+        </a>
 
-            <div class="video-container">
-                <video controls loop muted poster="assets/intro_placeholder.png">
-                    <source src="assets/intro.mp4">
-                    This browser does not display the video tag.
-                </video>
+        <a href="https://github.com/redpenguinyt" target="_blank" rel="noopener noreferrer">
+            <div class="link-box" id="mailing">
+                <h2>
+                    <i class="i fa fa-envelope" aria-hidden="true"></i>
+                    Mailing List
+                </h2>
+                <p>An email once per release!</p>
             </div>
+        </a>
+    </div>
+    --->
+
+    <div class="link-box" id="bwirds">
+        <h2>
+            <!-- <i class="i fa-solid fa-satellite" aria-hidden="true"></i> -->
+            BWIRDS
+        </h2>
+        <p>A whimsical word game for the playdate!</p>
+        <p>(coming soon)</p>
+
+        <img src="assets/bwirds.jpg">
+        <div class="link-row">
+            <a href="https://sourencho.itch.io/bwirds" target="_blank" rel="noopener noreferrer">
+                <i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
+                <span class="underline">itch.io</span>
+            </a>
         </div>
+    </div>
 
-    </body>
+    <div class="link-box" id="eelbay">
+        <h2>
+            <!-- <i class="i fa-solid fa-slash" aria-hidden="true"></i> -->
+            Eelbay
+        </h2>
+        <p>Mix and match cute eels!</p>
+
+        <video controls autoplay muted loop>
+            <source src="assets/intro.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="link-row">
+                <a href="https://apps.apple.com/us/app/eelbay/id6461977106" target="_blank" rel="noopener noreferrer">
+                    <i class="i fa-brands fa-apple" aria-hidden="true"></i>
+                    <span class="underline">App Store</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.godotengine.eelbay" target="_blank" rel="noopener noreferrer">
+                    <i class="i fa-brands fa-google-play" aria-hidden="true"></i>
+                    <span class="underline">Google Play</span>
+                </a>
+        </div>
+        <div class="link-row">
+            <a href="https://sourencho.itch.io/eelbay" target="_blank" rel="noopener noreferrer">
+                <i class="i fa-brands fa-itch-io" aria-hidden="true"></i>
+                <span class="underline">itch.io</span>
+            </a>
+        </div>
+    </div>
+</body>
 </html>

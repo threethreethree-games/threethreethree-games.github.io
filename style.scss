@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+
+    font-family: "Noto Sans Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    color: white;
+}
+
+body {
+    background: #1a1d2c;
+    padding: 6px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+    >h1,
+    >h2 {
+        color: #93B5AF;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    &:hover {
+        color: #91bfff;
+    }
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.link-box-row {
+    max-width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    a {
+        text-decoration: none;
+        min-width: 250px;
+        flex: 1;
+    }
+}
+
+.link-box {
+    max-width: 550px;
+    background-color: #151426;
+    border: 2px solid rgb(139, 136, 219);
+    border-radius: 8px;
+    padding: 0px 16px;
+    width: 100%;
+    height: 100%;
+
+    min-width: 250px;
+
+    &:hover {
+        border-color: rgb(145, 191, 255);
+    }
+
+    video,
+    img {
+        width: 100%;
+    }
+
+    &#github {
+        background-color: #22272E;
+    }
+
+    &#itch {
+        background-color: #F13152;
+    }
+
+    &#spaceshipment {
+        background-color: #231b18;
+        image-rendering: pixelated;
+    }
+
+    &#lasers {
+        background-color: #1E5085;
+
+        video {
+            aspect-ratio: 874/560;
+        }
+    }
+
+    &#safety-diver {
+        background-color: #d4d992;
+        image-rendering: pixelated;
+
+        * {
+            color: #151426;
+        }
+    }
+
+    &#display3d {
+        background-color: #5B7C89;
+
+        video {
+            aspect-ratio: 16/9;
+        }
+    }
+
+    &#gemini {
+        background-color: #F58142;
+    }
+}
+
+.link-row {
+    padding: 12px 3px;
+    font-size: 1.2em;
+
+    a {
+        margin-right: 5px;
+        text-decoration: none;
+    }
+}
+
+.below-text {
+    padding-top: 0;
+}
