@@ -68,9 +68,6 @@ a:hover {
   min-width: 250px;
   margin-bottom: 20px;
 }
-.link-box:hover {
-  border-color: rgb(145, 191, 255);
-}
 .link-box video,
 .link-box img {
   width: 100%;
@@ -82,7 +79,7 @@ a:hover {
   background-color: #F13152;
 }
 .link-box#eelbay {
-  background-color: #81afe8;
+  background-color: #517aba;
 }
 .link-box#lasers video {
   aspect-ratio: 874/560;
@@ -91,6 +88,12 @@ a:hover {
   background-color: #e2bc6e;
 }
 .link-box#bwirds * {
+  color: #322f28;
+}
+.link-box#mimic {
+  background-color: #6fa5cf;
+}
+.link-box#mimic * {
   color: #322f28;
 }
 
