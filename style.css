@@ -119,4 +119,9 @@ a:hover {
   height: auto;
   margin: 5px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
